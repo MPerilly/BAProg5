@@ -36,19 +36,19 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\mikep\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.7846.88\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "C:\Users\Michael Perillo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.7846.88\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\mikep\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.7846.88\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = "C:\Users\Michael Perillo\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\201.7846.88\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\mikep\Desktop\BAProg5
+CMAKE_SOURCE_DIR = "C:\Users\Michael Perillo\CLionProjects\BAProg5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\mikep\Desktop\BAProg5\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Michael Perillo\CLionProjects\BAProg5\cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -75,14 +75,14 @@ clean: CMakeFiles\BAProg5.dir\clean
 CMakeFiles\BAProg5.dir\all:
 	$(MAKE) -f CMakeFiles\BAProg5.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BAProg5.dir\depend
 	$(MAKE) -f CMakeFiles\BAProg5.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BAProg5.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\mikep\Desktop\BAProg5\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target BAProg5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Michael Perillo\CLionProjects\BAProg5\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target BAProg5"
 .PHONY : CMakeFiles\BAProg5.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\BAProg5.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mikep\Desktop\BAProg5\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Michael Perillo\CLionProjects\BAProg5\cmake-build-debug\CMakeFiles" 2
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\BAProg5.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mikep\Desktop\BAProg5\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Michael Perillo\CLionProjects\BAProg5\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles\BAProg5.dir\rule
 
 # Convenience name for target.
