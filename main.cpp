@@ -16,7 +16,7 @@ std::priority_queue<size_t , std::vector<size_t>, greater<size_t>> mindex;
 
 
 vector<size_t> split(const string &str);
-void topsort(const size_t &y);
+void topsort( size_t y);
 
 int main() {
     // Parsing input:
@@ -45,16 +45,12 @@ int main() {
             mindex.push(i);
         }
     }
-    while (!mindex.empty()){
-        topsort(mindex.top());
-        num_visited++;
-    }
-    if (num_visited != num_nodes) {
+    if (mindex.empty()){
         cout << "-1";
         return 0;
     }
-    for(size_t i = 0; i < num_nodes; ++i){
-        cout << topsort_buf[i] + 1 << ' ';
+    while (!mindex.empty()){
+        topsort(mindex.top());
     }
 
     return 0;
@@ -71,8 +67,8 @@ vector<size_t> split(const string &str) {
 }
 
 
-void topsort(const size_t &y) {
-    topsort_buf.push_back(y);
+void topsort( size_t y) {
+    cout << y + 1 << ' ';
     mindex.pop();
     for (size_t i = 0; i < adj_list[y].size(); ++i){
         if (--indegree[adj_list[y][i]] == 0){
